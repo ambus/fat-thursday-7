@@ -37,3 +37,6 @@ Ekwiwalent tych opcji to polecenie
 ```properties
 git add --patch
 ```
+
+### `git commit`
+Polecenie `git commit` możemy wywołać bezpośrednio z *command palette* (mamy tam kilka opcji), oraz takzę w panelu `Source control`. 
