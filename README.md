@@ -16,6 +16,6 @@
 
 >Git History, Search and More (including git log)
 
-[Instrukcja jak zainstalować wybrane wtyczki.](https://code.visualstudio.com/docs/editor/extension-marketplace)
+[*Instrukcja jak zainstalować wtyczki w VSCode.*](https://code.visualstudio.com/docs/editor/extension-marketplace)
 
 ---
