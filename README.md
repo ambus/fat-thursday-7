@@ -57,3 +57,10 @@ W przypadku polecenia `git pull` mamy taką samą sytuację jak z `push`'em. Pol
 >zwykłe `git pull` to tak naprawdę połączenie dwóch poleceń: `git fetch & git merge`. Wywołanie tego polecenia powoduje pobranie zmianych z zdalnego brancha i stworzenie nowego *merge commit'u*
 
 > `git pull --rebase` wykonuje `git fetch & git rebase`, efektywnie przenosząc nasze zmiany na "czubek" zmian ze zdalnego brancha. 
+
+#### TIP
+Ustawienie globalnej opcji
+```properties
+git config --global pull.rebase true
+```
+spowoduje że wszystkie nasze pulle będą domyślnie z opcją `--rebase`;
