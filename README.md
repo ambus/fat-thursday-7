@@ -64,3 +64,7 @@ Ustawienie globalnej opcji
 git config --global pull.rebase true
 ```
 spowoduje że wszystkie nasze pulle będą domyślnie z opcją `--rebase`;
+
+### `git fetch`
+
+Polecenie `git fetch` wywołujemy z *command palette*. Niestety tutaj nie mamy zbyt wielu opcji.
