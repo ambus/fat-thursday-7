@@ -100,3 +100,4 @@ W celu wykonania `marga`, podobnie jak w przypadku wielu innych poleceń mamy ki
 - `--no-ff` nie zrobi fast-forwardingu
 - `--no-ff --no-commit` zrobi merga bez FF i bez commitu mergującego
 
+### `git rebase`
