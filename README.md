@@ -98,7 +98,7 @@ W celu wykonania `marga`, podobnie jak w przypadku wielu innych poleceń mamy ki
 - `--ff-only` utworzy fast-forward merga
 - `--squash` połączy nam wszystkie commity do jednego i go zmerguje
 - `--no-ff` nie zrobi fast-forwardingu
-- `--no-ff --no-commit` zrobi merga bez FF i bez commitu mergującego
+- `--no-ff --no-commit` zrobi merga bez FF i bez commitu mergującego (bedziemy musieli go sami wywołać)
 
 ### `git rebase`
 
