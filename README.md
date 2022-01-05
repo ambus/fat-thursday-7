@@ -79,3 +79,8 @@ Możemy go także wykonać na grafie w *Git Graph*. Odnajdujemy interesujący na
 
 Cherry-picka możemy także wykonać w zakładce *Git Lense*. Na liście branchy wskazujemy interesujący nas commit i z menu kontekstowego wybieramy `Cherry Pick Commit...`. Tutaja mamy te same opcje co w przypadku cherry-picka wywołanego z *command palette*.
 
+### `git checkout` i `git branch`
+Mamy wiele możliwości aby utworzyć nowy brach lub przełączyć się na już isteniejący:
+1. Możemy tego dokonać w panelu *GITLENS* 
+2. Możemy posłużyć się menu kontestowym w *Git Graph*
+3. Ale najłatwiejszą opcją będzie wywołanie polecenia z *command palette*. 
