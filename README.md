@@ -84,3 +84,6 @@ Mamy wiele możliwości aby utworzyć nowy brach lub przełączyć się na już 
 1. Możemy tego dokonać w panelu *GITLENS* 
 2. Możemy posłużyć się menu kontestowym w *Git Graph*
 3. Ale najłatwiejszą opcją będzie wywołanie polecenia z *command palette*. 
+
+### `git ignore`
+Jeśli chcecie szybko dodać jakiś plik do *.gitignore*, wystarczy go otworzyć i wywołać polecenie `Git: Add to .gitignore`. 
