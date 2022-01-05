@@ -87,3 +87,16 @@ Mamy wiele możliwości aby utworzyć nowy brach lub przełączyć się na już 
 
 ### `git ignore`
 Jeśli chcecie szybko dodać jakiś plik do *.gitignore*, wystarczy go otworzyć i wywołać polecenie `Git: Add to .gitignore`. 
+
+### `git merge`
+
+W celu wykonania `marga`, podobnie jak w przypadku wielu innych poleceń mamy kilka opcji do wyboru.
+1. Możemy się posłużyć zakładką *GitLense* i tam w panelu *BRANCHES* możemy z menu kontekstowego możemy wybrać opcję `Merge Branch into Current Branch...` 
+2. W panelu *Git Graph* z menu kontekstowego możemy wybrać `Merge into current branch...`
+3. Ponownie najlepszą i najłatwiejszym sposobem jest posłużenie się *command palette*. Wybieramy opcję *GitLense: Git merge...*. Po wybraniu interesującego nas brancha, mamy kilka opcji do wyboru: 
+![Command Palette - merge](./img/merge.png)
+- `--ff-only` utworzy fast-forward merga
+- `--squash` połączy nam wszystkie commity do jednego i go zmerguje
+- `--no-ff` nie zrobi fast-forwardingu
+- `--no-ff --no-commit` zrobi merga bez FF i bez commitu mergującego
+
