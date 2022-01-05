@@ -16,6 +16,74 @@
 
 >Git History, Search and More (including git log)
 
-[Instrukcja jak zainstalować wybrane wtyczki.](https://code.visualstudio.com/docs/editor/extension-marketplace)
+[*Instrukcja jak zainstalować wtyczki w VSCode.*](https://code.visualstudio.com/docs/editor/extension-marketplace)
 
 ---
+
+## Praca z podstawowymi poleceniami- czyli to czego używamy najczęściej
+
+### `git clone`
+
+Można wybrać tryb klonowania prosto z podanego URL'a bądz jeśli wybierzemy opcję GitHub i sparujemy nasz VSCode z kontem na Githubie, będziemy mogli klonować repozytoria które są na naszym koncie. 
+Warto wspomnieć w tym miejcu o wtyczce [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) dzięki której możemy przeglądać i zarządzać GitHubowymi pull requestami bezpośrednio z poziomu VSCode. Istnieje także jej odpowiednik dla BitBucketa [Jira and Bitbucket](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode)
+
+### `git add`
+
+Zmiany jakie chcemy zacommitować wybieramy w panelu *Source Control*. Możemy dodawać do commita całe pliki lub wybrać tylko te linnie kodu które nas interesują -> w tym celu wyświetlamy *working tree* w exploratorze, zaznaczamy interesującą nasz część i z menu kontekstowego wybieramy `Stage Selected Ranges` (lub używamy skrótu klawiaturowego *CMD + K ALT + CMD + S*). Możemu tutaj także odznaczyć kod który nas nie interesuje, albo cofnąć nasze zmiany. 
+
+Istnieje jeszcze możliwość *stagowania* zmian bezpośrednio w edytowanym pliku -> więcej o tym będzie przy **rewizji**. 
+
+Ekwiwalent tych opcji to polecenie 
+```properties
+git add --patch
+```
+
+### `git commit`
+Polecenie `git commit` możemy wywołać bezpośrednio z *command palette* (mamy tam kilka opcji), oraz takzę w panelu `Source control`. 
+
+### `git push`
+
+Polecenie `git push` wywołujemy z *command palette*. Mamy tutaj kilka opcji. Najlepszą jest `GitLense: Push`. Po jej wybraniu będziemy widzieć ile commitów zostanie wypchniętych do naszego serwera. Dodatkowo mamy możliwość wyboru *zwykłego* pusha bądz też z opcją `--force-with-lease`
+
+>`--force-with-lease` is a safer option that will not overwrite any work on the remote branch if more commits were added to the remote branch (by another team-member or coworker or what have you). It ensures you do not overwrite ,meone elses work by force pushing.
+
+Możemy także zrobić pusha dla brancha na którym już nie jesteśmy. W tym celu przechodzimy na panel **GitLense** i w zakładce *Branches* odnajdujemy interesujący nas branch. Tam klikamy ikonę ze strzałką skierowaną ku górze.
+
+### `git pull`
+
+W przypadku polecenia `git pull` mamy taką samą sytuację jak z `push`'em. Polecenie wywołujemy z *command palette*. Mamy tutaj kilka opcji. Najlepszą jest `GitLense: pull`. Po jej wybraniu zostaniemy poinformowani ile commitów zostanie pobranych do naszego brancha. Dodatkowo, mamy możliwość wybrania opcji `--rebase`.
+
+
+>zwykłe `git pull` to tak naprawdę połączenie dwóch poleceń: `git fetch & git merge`. Wywołanie tego polecenia powoduje pobranie zmianych z zdalnego brancha i stworzenie nowego *merge commit'u*
+
+> `git pull --rebase` wykonuje `git fetch & git rebase`, efektywnie przenosząc nasze zmiany na "czubek" zmian ze zdalnego brancha. 
+
+#### TIP
+Ustawienie globalnej opcji
+```properties
+git config --global pull.rebase true
+```
+spowoduje że wszystkie nasze pulle będą domyślnie z opcją `--rebase`;
+
+### `git fetch`
+
+Polecenie `git fetch` wywołujemy z *command palette*. Niestety tutaj nie mamy zbyt wielu opcji.
+
+
+### `git cherry-pick`
+
+*Cherry-pick'a* możemy zrobić bezpośrednio z *command palette*, gdzie mamy możliwość, najpierw wybrania brancha a następnie wskazania commitu który nas interesuje lub też bezpośrednio podając id. 
+Możemy go także wykonać na grafie w *Git Graph*. Odnajdujemy interesujący nas commit i z menu kontekstowego wybiermy `Cherry pick...`. W okienku które się pojawi mamy dwie dodatkowe flagi które możemy oznaczyć. Tj. :
+- `No commit` - nie tworzy nam bezpośrednio nowego commita. Przydatne jeśli chcemy wziąć więcej commitów.
+- `Record origin` - dodaje tekst *cherry-picked from commit ...* do oryginalnej wiadomości. Jeśli cherry-pickujemy z prywatnego brancha to ta informacja jest totalnie zbędna dla pozostałych użytkowników naszego repozytorium więce lepiej jej nie dodawać. 
+
+Cherry-picka możemy także wykonać w zakładce *Git Lense*. Na liście branchy wskazujemy interesujący nas commit i z menu kontekstowego wybieramy `Cherry Pick Commit...`. Tutaja mamy te same opcje co w przypadku cherry-picka wywołanego z *command palette*.
+
+### `git checkout` i `git branch`
+Mamy wiele możliwości aby utworzyć nowy brach lub przełączyć się na już isteniejący:
+1. Możemy tego dokonać w panelu *GITLENS* 
+2. Możemy posłużyć się menu kontestowym w *Git Graph*
+3. Ale najłatwiejszą opcją będzie wywołanie polecenia z *command palette*. 
+
+### `git ignore`
+Jeśli chcecie szybko dodać jakiś plik do *.gitignore*, wystarczy go otworzyć i wywołać polecenie `Git: Add to .gitignore`. 
