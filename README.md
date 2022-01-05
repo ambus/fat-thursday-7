@@ -101,3 +101,5 @@ W celu wykonania `marga`, podobnie jak w przypadku wielu innych poleceń mamy ki
 - `--no-ff --no-commit` zrobi merga bez FF i bez commitu mergującego
 
 ### `git rebase`
+
+Some test information
