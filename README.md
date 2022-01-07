@@ -116,3 +116,57 @@ Krótki wyjaśnienie poszczególnych poleceń:
 - squash = use commit, but meld into previous commit
 - fixup = like "squash", but discard this commit's log message
 - drop = remove commit
+
+## Łooooo Panie, a kto Panu tutaj tak sp*******?
+
+### File history
+File history w panelu *GitLense*
+
+![File history w panelu GitLense](./img/filehistory.png)
+
+
+Timeline:
+
+![Timeline](./img/timeline.png)
+
+File history z dodatku GitHistory:
+![file history](./img/fileHistoryGitHistory.png)
+
+
+### Folder history
+Ciekawą opcją (chociaż żadziej stosowaną) jest wyświetlanie histori katalogu. W exploratorze, po wybraniu interesującego nad folderu z menu kontekstowego wybieramy opcję `Open Folder History`.
+
+![folder history](./img/folderHistory.png)
+
+
+### Line History
+
+![Line history](./img/lineHistory.png)
+
+
+### File blame
+
+![file blame](./img/fileBlame.png)
+Panel *File Blame* możemy włączyć na cztery sposoby:
+1. Pierwszy, naprostrzy to skróty klawiaturowy ALT + CMD + G  B
+2. Drugi to wybranie opcji *File Blame* w górnym pasku nawigacyjnym  ![panel nawigacyjny](./img/fileBlamePanelNawigacyjny.png)
+3. Trzeci to wywołanie z *command palette* opcji `GitLense: Toggle File Blame`
+4. Czwarta opcja to kliknięcie na autora pliku, funkcji lub linii ![autor](./img/fileBlameAutor.png)
+
+
+### File Heatmap
+
+Pokazuje obszary w których zmiany są najczęstsze:
+![autor](./img/fileHeatmap.png)
+
+Włączamy z *command palette* oraz z górnego paska nawigacyjnego.
+![autor](./img/fileHeatmapPanel.png)
+
+Im kolor bardziej czerwony tym zmany były częstsze. 
+
+### Revision
+
+GitLens daje nam bardzo fajne narzędzie do wykonaywania rewizji plików. 
+W celu szybkiego podglądu zmian jakie były wprowadzone w obecnie otwartym pliku należy:
+- posłużyć się skrótem klawiaturowym CMD + ALT + G ,  ![revision](./img/revision2.png)
+- w górnym pasku nawigacyjnym kliknąć ikonę kółka ze strzałką skierowaną w lewą stronę: ![revision](./img/revision.png)
