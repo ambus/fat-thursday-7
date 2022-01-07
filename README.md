@@ -144,3 +144,12 @@ Ciekawą opcją (chociaż żadziej stosowaną) jest wyświetlanie histori katalo
 ![Line history](./img/lineHistory.png)
 
 
+### File blame
+
+![file blame](./img/fileBlame.png)
+Panel *File Blame* możemy włączyć na cztery sposoby:
+1. Pierwszy, naprostrzy to skróty klawiaturowy ALT + CMD + G  B
+2. Drugi to wybranie opcji *File Blame* w górnym pasku nawigacyjnym  ![panel nawigacyjny](./img/fileBlamePanelNawigacyjny.png)
+3. Trzeci to wywołanie z *command palette* opcji `GitLense: Toggle File Blame`
+4. Czwarta opcja to kliknięcie na autora pliku, funkcji lub linii ![autor](./img/fileBlameAutor.png)
+
