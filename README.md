@@ -164,3 +164,9 @@ Włączamy z *command palette* oraz z górnego paska nawigacyjnego.
 
 Im kolor bardziej czerwony tym zmany były częstsze. 
 
+### Revision
+
+GitLens daje nam bardzo fajne narzędzie do wykonaywania rewizji plików. 
+W celu szybkiego podglądu zmian jakie były wprowadzone w obecnie otwartym pliku należy:
+- posłużyć się skrótem klawiaturowym CMD + ALT + G ,  ![revision](./img/revision2.png)
+- w górnym pasku nawigacyjnym kliknąć ikonę kółka ze strzałką skierowaną w lewą stronę: ![revision](./img/revision.png)
