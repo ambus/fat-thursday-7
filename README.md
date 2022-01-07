@@ -138,3 +138,9 @@ Ciekawą opcją (chociaż żadziej stosowaną) jest wyświetlanie histori katalo
 
 ![folder history](./img/folderHistory.png)
 
+
+### Line History
+
+![Line history](./img/lineHistory.png)
+
+
