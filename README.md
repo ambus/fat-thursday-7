@@ -179,3 +179,7 @@ W celu szybkiego podglądu zmian jakie były wprowadzone w obecnie otwartym plik
 ### Lista kontrybutorów
 W GitLens mamy możliwość podejrzenia wszystkich kontrybutorów naszego repozytorium:
 ![Contributors](./img/contributors.png)
+
+### Git Graph - ustawienia
+
+![Git Graph settings](./img/gitGraphSettings.png)
