@@ -124,6 +124,8 @@ File history w panelu *GitLense*
 
 ![File history w panelu GitLense](./img/filehistory.png)
 
+File history z nie wypchniętymi commitami:
+![File history z nie wypchniętymi commitami](./img/fileHistoryWithNotPushedCommits.png)
 
 Timeline:
 
