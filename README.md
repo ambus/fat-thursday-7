@@ -132,3 +132,9 @@ Timeline:
 File history z dodatku GitHistory:
 ![file history](./img/fileHistoryGitHistory.png)
 
+
+### Folder history
+Ciekawą opcją (chociaż żadziej stosowaną) jest wyświetlanie histori katalogu. W exploratorze, po wybraniu interesującego nad folderu z menu kontekstowego wybieramy opcję `Open Folder History`.
+
+![folder history](./img/folderHistory.png)
+
