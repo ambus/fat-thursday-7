@@ -153,3 +153,14 @@ Panel *File Blame* możemy włączyć na cztery sposoby:
 3. Trzeci to wywołanie z *command palette* opcji `GitLense: Toggle File Blame`
 4. Czwarta opcja to kliknięcie na autora pliku, funkcji lub linii ![autor](./img/fileBlameAutor.png)
 
+
+### File Heatmap
+
+Pokazuje obszary w których zmiany są najczęstsze:
+![autor](./img/fileHeatmap.png)
+
+Włączamy z *command palette* oraz z górnego paska nawigacyjnego.
+![autor](./img/fileHeatmapPanel.png)
+
+Im kolor bardziej czerwony tym zmany były częstsze. 
+
