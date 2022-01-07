@@ -116,3 +116,19 @@ Krótki wyjaśnienie poszczególnych poleceń:
 - squash = use commit, but meld into previous commit
 - fixup = like "squash", but discard this commit's log message
 - drop = remove commit
+
+## Łooooo Panie, a kto Panu tutaj tak sp*******?
+
+### File history
+File history w panelu *GitLense*
+
+![File history w panelu GitLense](./img/filehistory.png)
+
+
+Timeline:
+
+![Timeline](./img/timeline.png)
+
+File history z dodatku GitHistory:
+![file history](./img/fileHistoryGitHistory.png)
+
