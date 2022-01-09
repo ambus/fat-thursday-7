@@ -183,3 +183,15 @@ W GitLens mamy możliwość podejrzenia wszystkich kontrybutorów naszego repozy
 ### Git Graph - ustawienia
 
 ![Git Graph settings](./img/gitGraphSettings.png)
+
+
+### Git Tags 
+
+Panel tagów w zakładce GitLense:
+
+![Git Tags](./img/tagsPanel.png)
+
+Usuwanie tagów za pomocą wtyczki GitLense, z panelu *command palette*:
+
+![DeleteTag](./img/deleteTag.png)
+
