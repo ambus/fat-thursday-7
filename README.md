@@ -206,3 +206,31 @@ Polecenia związane z git stash, dostępne w *command palette*.
 
 ![Stash](./img/stash.png)
 
+## Let's make command line greate again!
+
+Git jest bardzo podtężnym narzędziem. A wszystkie opcjie które do tej pory zostały zaprezentowane, tak na prawdę odwołują się do prostych poleceń które możemy wywołać bezpośrednio w command line.
+
+
+### Aliasy
+
+Wyświetlenie wszystkich aliasów:
+```sh
+git config --list | grep alias
+```
+
+![Aliases](./img/aliases.png)
+
+
+lub możemy najpierw utworzyć alias to wyświetlania listy aliasów :):
+```sh
+git config --global alias.alias "! git config --list | grep 'alias\.' | sed 's/alias\.\([^=]*\)=\(.*\)/\1\	 => \2/' | sort"
+```
+
+a następnie ją wyświetlić:
+```sh
+git alias
+```
+
+![Aliases list](./img/aliasAlias.png)
+
+
