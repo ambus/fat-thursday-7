@@ -256,3 +256,9 @@ Tworzymy alias `git llg`:
 git config --global alias.llg "log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit"
 ```
 
+### Lazygit
+
+https://github.com/jesseduffield/lazygit
+
+![Lazygit](./img/lazygit.png)
+
