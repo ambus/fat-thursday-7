@@ -275,4 +275,5 @@ https://github.com/jesseduffield/lazygit
 
 ### GFC
 
-![GFC](./img/gfcm.png)
+
+![GFCM](./img/gfcm.png)
