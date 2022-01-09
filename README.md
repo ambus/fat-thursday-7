@@ -24,12 +24,12 @@
 
 ### `git clone`
 
-Można wybrać tryb klonowania prosto z podanego URL'a bądz jeśli wybierzemy opcję GitHub i sparujemy nasz VSCode z kontem na Githubie, będziemy mogli klonować repozytoria które są na naszym koncie. 
-Warto wspomnieć w tym miejcu o wtyczce [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) dzięki której możemy przeglądać i zarządzać GitHubowymi pull requestami bezpośrednio z poziomu VSCode. Istnieje także jej odpowiednik dla BitBucketa [Jira and Bitbucket](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode)
+Można wybrać tryb klonowania prosto z podanego URL'a bądź jeśli wybierzemy opcję GitHub i sparujemy nasz VSCode z kontem na Githubie, będziemy mogli klonować repozytoria które są na naszym koncie. 
+Warto wspomnieć w tym miejscu o wtyczce [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) dzięki której możemy przeglądać i zarządzać GitHubowymi pull requestami bezpośrednio z poziomu VSCode. Istnieje także jej odpowiednik dla BitBucketa [Jira and Bitbucket](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode)
 
 ### `git add`
 
-Zmiany jakie chcemy zacommitować wybieramy w panelu *Source Control*. Możemy dodawać do commita całe pliki lub wybrać tylko te linnie kodu które nas interesują -> w tym celu wyświetlamy *working tree* w exploratorze, zaznaczamy interesującą nasz część i z menu kontekstowego wybieramy `Stage Selected Ranges` (lub używamy skrótu klawiaturowego *CMD + K ALT + CMD + S*). Możemu tutaj także odznaczyć kod który nas nie interesuje, albo cofnąć nasze zmiany. 
+Zmiany jakie chcemy zacommitować wybieramy w panelu *Source Control*. Możemy dodawać do commita całe pliki lub wybrać tylko te linie kodu które nas interesują -> w tym celu wyświetlamy *working tree* w exploratorze, zaznaczamy interesującą nasz część i z menu kontekstowego wybieramy `Stage Selected Ranges` (lub używamy skrótu klawiaturowego *CMD + K ALT + CMD + S*). Możemy tutaj także odznaczyć kod który nas nie interesuje, albo cofnąć nasze zmiany. 
 
 Istnieje jeszcze możliwość *stagowania* zmian bezpośrednio w edytowanym pliku -> więcej o tym będzie przy **rewizji**. 
 
@@ -39,7 +39,7 @@ git add --patch
 ```
 
 ### `git commit`
-Polecenie `git commit` możemy wywołać bezpośrednio z *command palette* (mamy tam kilka opcji), oraz takzę w panelu `Source control`. 
+Polecenie `git commit` możemy wywołać bezpośrednio z *command palette* (mamy tam kilka opcji), oraz także w panelu `Source control`. 
 
 ### `git push`
 
@@ -54,7 +54,7 @@ Możemy także zrobić pusha dla brancha na którym już nie jesteśmy. W tym ce
 W przypadku polecenia `git pull` mamy taką samą sytuację jak z `push`'em. Polecenie wywołujemy z *command palette*. Mamy tutaj kilka opcji. Najlepszą jest `GitLense: pull`. Po jej wybraniu zostaniemy poinformowani ile commitów zostanie pobranych do naszego brancha. Dodatkowo, mamy możliwość wybrania opcji `--rebase`.
 
 
->zwykłe `git pull` to tak naprawdę połączenie dwóch poleceń: `git fetch & git merge`. Wywołanie tego polecenia powoduje pobranie zmianych z zdalnego brancha i stworzenie nowego *merge commit'u*
+> zwykłe `git pull` to tak naprawdę połączenie dwóch poleceń: `git fetch & git merge`. Wywołanie tego polecenia powoduje pobranie zmianych z zdalnego brancha i stworzenie nowego *merge commit'u*
 
 > `git pull --rebase` wykonuje `git fetch & git rebase`, efektywnie przenosząc nasze zmiany na "czubek" zmian ze zdalnego brancha. 
 
@@ -75,14 +75,14 @@ Polecenie `git fetch` wywołujemy z *command palette*. Niestety tutaj nie mamy z
 *Cherry-pick'a* możemy zrobić bezpośrednio z *command palette*, gdzie mamy możliwość, najpierw wybrania brancha a następnie wskazania commitu który nas interesuje lub też bezpośrednio podając id. 
 Możemy go także wykonać na grafie w *Git Graph*. Odnajdujemy interesujący nas commit i z menu kontekstowego wybiermy `Cherry pick...`. W okienku które się pojawi mamy dwie dodatkowe flagi które możemy oznaczyć. Tj. :
 - `No commit` - nie tworzy nam bezpośrednio nowego commita. Przydatne jeśli chcemy wziąć więcej commitów.
-- `Record origin` - dodaje tekst *cherry-picked from commit ...* do oryginalnej wiadomości. Jeśli cherry-pickujemy z prywatnego brancha to ta informacja jest totalnie zbędna dla pozostałych użytkowników naszego repozytorium więce lepiej jej nie dodawać. 
+- `Record origin` - dodaje tekst *cherry-picked from commit ...* do oryginalnej wiadomości. Jeśli cherry-pickujemy z prywatnego brancha to ta informacja jest totalnie zbędna dla pozostałych użytkowników naszego repozytorium więc lepiej jej nie dodawać. 
 
 Cherry-picka możemy także wykonać w zakładce *Git Lense*. Na liście branchy wskazujemy interesujący nas commit i z menu kontekstowego wybieramy `Cherry Pick Commit...`. Tutaja mamy te same opcje co w przypadku cherry-picka wywołanego z *command palette*.
 
 ### `git checkout` i `git branch`
-Mamy wiele możliwości aby utworzyć nowy brach lub przełączyć się na już isteniejący:
+Mamy wiele możliwości aby utworzyć nowy brach lub przełączyć się na już istniejący:
 1. Możemy tego dokonać w panelu *GITLENS* 
-2. Możemy posłużyć się menu kontestowym w *Git Graph*
+2. Możemy posłużyć się menu kontekstowym w *Git Graph*
 3. Ale najłatwiejszą opcją będzie wywołanie polecenia z *command palette*. 
 
 ### `git ignore`
@@ -98,14 +98,14 @@ W celu wykonania `marga`, podobnie jak w przypadku wielu innych poleceń mamy ki
 - `--ff-only` utworzy fast-forward merga
 - `--squash` połączy nam wszystkie commity do jednego i go zmerguje
 - `--no-ff` nie zrobi fast-forwardingu
-- `--no-ff --no-commit` zrobi merga bez FF i bez commitu mergującego (bedziemy musieli go sami wywołać)
+- `--no-ff --no-commit` zrobi merga bez FF i bez commitu mergującego (będziemy musieli go sami wywołać)
 
 ### `git rebase`
 
 Rebase jest bardzo użyteczne i z opcją `--interactiv` umożliwia nam bardzo wiele.
-VSCode i wtyczka GitLense pozwalają nam jeszcze lepiej i "przyjemniej" zarządzać rebasem. W tym celu należy zmienić globalną konfigurację git'a dla domyślnego edytora. Oczywiście GitLense nam to ułatiwa i w _command palette_ należy jedynie wywołać polecenie `GitLense: Enable Interactiv Rebase Editor`
+VSCode i wtyczka GitLense pozwalają nam jeszcze lepiej i "przyjemniej" zarządzać rebasem. W tym celu należy zmienić globalną konfigurację git'a dla domyślnego edytora. Oczywiście GitLense nam to ułatwia i w _command palette_ należy jedynie wywołać polecenie `GitLense: Enable Interactiv Rebase Editor`
 
-Od teraz gdy wywołamy rebase z opcją `-interactiv` naszym oczom powiniem ukazać się taki widok:
+Od teraz gdy wywołamy rebase z opcją `-interactiv` naszym oczom powinien ukazać się taki widok:
 ![GitLense - rebase](./img/rebase.png)
 
 Krótki wyjaśnienie poszczególnych poleceń:
@@ -114,7 +114,7 @@ Krótki wyjaśnienie poszczególnych poleceń:
 - reword = use commit, but edit the commit message
 - edit = use commit, but stop for amending
 - squash = use commit, but meld into previous commit
-- fixup = like "squash", but discard this commit's log message
+- fixup = like "squash", but discard this commit's log message - więcej o tej opcji bedzie przy `git commit --fixup=`
 - drop = remove commit
 
 ## Łooooo Panie, a kto Panu tutaj tak sp*******?
@@ -150,7 +150,7 @@ Ciekawą opcją (chociaż żadziej stosowaną) jest wyświetlanie histori katalo
 
 ![file blame](./img/fileBlame.png)
 Panel *File Blame* możemy włączyć na cztery sposoby:
-1. Pierwszy, naprostrzy to skróty klawiaturowy ALT + CMD + G  B
+1. Pierwszy, najprostszy to skróty klawiaturowy ALT + CMD + G  B
 2. Drugi to wybranie opcji *File Blame* w górnym pasku nawigacyjnym  ![panel nawigacyjny](./img/fileBlamePanelNawigacyjny.png)
 3. Trzeci to wywołanie z *command palette* opcji `GitLense: Toggle File Blame`
 4. Czwarta opcja to kliknięcie na autora pliku, funkcji lub linii ![autor](./img/fileBlameAutor.png)
@@ -164,11 +164,11 @@ Pokazuje obszary w których zmiany są najczęstsze:
 Włączamy z *command palette* oraz z górnego paska nawigacyjnego.
 ![autor](./img/fileHeatmapPanel.png)
 
-Im kolor bardziej czerwony tym zmany były częstsze. 
+Im kolor bardziej czerwony tym zmiany były częstsze. 
 
 ### Revision
 
-GitLens daje nam bardzo fajne narzędzie do wykonaywania rewizji plików. 
+GitLens daje nam bardzo fajne narzędzie do wykonywania rewizji plików. 
 W celu szybkiego podglądu zmian jakie były wprowadzone w obecnie otwartym pliku należy:
 - posłużyć się skrótem klawiaturowym CMD + ALT + G ,  ![revision](./img/revision2.png)
 - w górnym pasku nawigacyjnym kliknąć ikonę kółka ze strzałką skierowaną w lewą stronę: ![revision](./img/revision.png)
