@@ -172,3 +172,37 @@ GitLens daje nam bardzo fajne narzędzie do wykonaywania rewizji plików.
 W celu szybkiego podglądu zmian jakie były wprowadzone w obecnie otwartym pliku należy:
 - posłużyć się skrótem klawiaturowym CMD + ALT + G ,  ![revision](./img/revision2.png)
 - w górnym pasku nawigacyjnym kliknąć ikonę kółka ze strzałką skierowaną w lewą stronę: ![revision](./img/revision.png)
+
+
+## Extras
+
+### Lista kontrybutorów
+W GitLens mamy możliwość podejrzenia wszystkich kontrybutorów naszego repozytorium:
+![Contributors](./img/contributors.png)
+
+### Git Graph - ustawienia
+
+![Git Graph settings](./img/gitGraphSettings.png)
+
+
+### Git Tags 
+
+Panel tagów w zakładce GitLense:
+
+![Git Tags](./img/tagsPanel.png)
+
+Usuwanie tagów za pomocą wtyczki GitLense, z panelu *command palette*:
+
+![DeleteTag](./img/deleteTag.png)
+
+
+### Git Stash 
+
+Panel stashes w zakładce GitLense:
+
+![Git stash](./img/stashesPanel.png)
+
+Polecenia związane z git stash, dostępne w *command palette*.
+
+![Stash](./img/stash.png)
+
