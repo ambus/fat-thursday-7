@@ -277,3 +277,5 @@ https://github.com/jesseduffield/lazygit
 
 
 ![GFCM](./img/gfcm.png)
+
+kolejna linijka
