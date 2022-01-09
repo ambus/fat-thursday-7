@@ -195,3 +195,14 @@ Usuwanie tagów za pomocą wtyczki GitLense, z panelu *command palette*:
 
 ![DeleteTag](./img/deleteTag.png)
 
+
+### Git Stash 
+
+Panel stashes w zakładce GitLense:
+
+![Git stash](./img/stashesPanel.png)
+
+Polecenia związane z git stash, dostępne w *command palette*.
+
+![Stash](./img/stash.png)
+
