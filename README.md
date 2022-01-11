@@ -38,7 +38,7 @@ Ekwiwalent tych opcji to polecenie
 git add --patch
 ```
 
-### `git commit`
+### `git commit` 1
 Polecenie `git commit` możemy wywołać bezpośrednio z *command palette* (mamy tam kilka opcji), oraz także w panelu `Source control`. 
 
 ### `git push` 2
