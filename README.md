@@ -88,7 +88,7 @@ Mamy wiele możliwości aby utworzyć nowy brach lub przełączyć się na już 
 ### `git ignore` 5
 Jeśli chcecie szybko dodać jakiś plik do *.gitignore*, wystarczy go otworzyć i wywołać polecenie `Git: Add to .gitignore`. 
 
-### `git merge`
+### `git merge` 6
 
 W celu wykonania `marga`, podobnie jak w przypadku wielu innych poleceń mamy kilka opcji do wyboru.
 1. Możemy się posłużyć zakładką *GitLense* i tam w panelu *BRANCHES* możemy z menu kontekstowego możemy wybrać opcję `Merge Branch into Current Branch...` 
