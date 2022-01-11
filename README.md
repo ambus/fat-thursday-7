@@ -65,7 +65,7 @@ git config --global pull.rebase true
 ```
 spowoduje że wszystkie nasze pulle będą domyślnie z opcją `--rebase`;
 
-### `git fetch`
+### `git fetch` 4
 
 Polecenie `git fetch` wywołujemy z *command palette*. Niestety tutaj nie mamy zbyt wielu opcji.
 
@@ -85,7 +85,7 @@ Mamy wiele możliwości aby utworzyć nowy brach lub przełączyć się na już 
 2. Możemy posłużyć się menu kontekstowym w *Git Graph*
 3. Ale najłatwiejszą opcją będzie wywołanie polecenia z *command palette*. 
 
-### `git ignore`
+### `git ignore` 5
 Jeśli chcecie szybko dodać jakiś plik do *.gitignore*, wystarczy go otworzyć i wywołać polecenie `Git: Add to .gitignore`. 
 
 ### `git merge`
