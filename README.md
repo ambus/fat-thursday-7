@@ -105,6 +105,8 @@ W celu wykonania `marga`, podobnie jak w przypadku wielu innych poleceń mamy ki
 Rebase jest bardzo użyteczne i z opcją `--interactiv` umożliwia nam bardzo wiele.
 VSCode i wtyczka GitLense pozwalają nam jeszcze lepiej i "przyjemniej" zarządzać rebasem. W tym celu należy zmienić globalną konfigurację git'a dla domyślnego edytora. Oczywiście GitLense nam to ułatwia i w _command palette_ należy jedynie wywołać polecenie `GitLense: Enable Interactiv Rebase Editor`
 
+![GitLense - rebase enable](./img/rebaseEnable.png)
+
 Od teraz gdy wywołamy rebase z opcją `-interactiv` naszym oczom powinien ukazać się taki widok:
 ![GitLense - rebase](./img/rebase.png)
 
