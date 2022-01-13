@@ -120,7 +120,7 @@ Krótki wyjaśnienie poszczególnych poleceń:
 - fixup = like "squash", but discard this commit's log message - więcej o tej opcji bedzie przy `git commit --fixup=`
 - drop = remove commit
 
-## Łooooo Panie, a kto Panu tutaj tak sp*******?
+## A teraz zobaczymy, kto napisał ten okropny kod...
 
 ### File history
 File history w panelu *GitLense*
